@@ -6,7 +6,7 @@ public class Product implements VAT27, Serializable {
         int counter;
         counter = 0;
         System.out.println(counter + " db termékkel indulunk.");
-        // System.out.println(numberOfProducts); ERROR, numberOfProducts is unknown here
+        // System.out.println(numberOfProducts);   ERROR: numberOfProducts is unknown here
     }
 
     static int numberOfProducts;
@@ -31,7 +31,7 @@ public class Product implements VAT27, Serializable {
 
 
 
-    @Override // default-to lehet, de nem kötelező
+    @Override // default-ot lehet, de nem kötelező
     public double calculateDoubleVAT(int vatRate) {
         return 0;
     }
